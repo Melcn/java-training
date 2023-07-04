@@ -19,18 +19,26 @@ public class landUserNameValidation {
 		Scanner sc = new Scanner(System.in);
 		//System.out.println(CodelandUserNameValidation(sc.nextLine()));
 		
-		String test = "username";
+		String test = "usernameusernameusername";
 		int count = 0;
 		
 		for(int i= 0; i < test.length(); i++) {
 			count++;
 		}
 		
-		System.out.println("nb de caracteres : " + count);
+		if(test.length() >= 4 && test.length() <= 25) {
+			System.out.println("nb de caracteres : " + count);
+		}else {
+			System.out.println("nop");
+		}
+		
+		
 		sc.close();
 	}
 
 	public static String CodelandUserNameValidation(String str) {
+		
+		
 		return str;
 	}
 }
