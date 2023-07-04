@@ -1,5 +1,7 @@
 package easy.quick;
 
+import java.util.Scanner;
+
 public class landUserNameValidation {
 
 	public static void main(String[] args) {
@@ -14,6 +16,13 @@ public class landUserNameValidation {
 			
 		*/
 
+		Scanner sc = new Scanner(System.in);
+		System.out.println(CodelandUserNameValidation(sc.nextLine()));
+		
+		sc.close();
 	}
 
+	public static String CodelandUserNameValidation(String str) {
+		return str;
+	}
 }
