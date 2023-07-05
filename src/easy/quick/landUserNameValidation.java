@@ -22,21 +22,17 @@ public class landUserNameValidation {
 
 		String test = "usernameusernameusername";
 		int count = 0;
-		
-		if (test.length() >= 4 && test.length() <= 25) {
-			
-			if(Character.isAlphabetic(test.charAt(0))) {
-				System.out.println("La premier caractere est une lettre");
-			}else {
-				System.out.println(" hee non");
-			}
-			for (int i = 0; i < test.length(); i++) {
-				count++;
-			}
 
+		if (test.length() >= 4 && test.length() <= 25) {
+
+			if (Character.isAlphabetic(test.charAt(0))) {
+				System.out.println("La premier caractere est une lettre");
+
+				for (int i = 0; i < test.length(); i++) {
+					count++;
+				}
+			}
 			System.out.println("nb de caracteres : " + count);
-		} else {
-			System.out.println("nop");
 		}
 
 		sc.close();
