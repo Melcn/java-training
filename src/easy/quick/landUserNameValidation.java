@@ -20,26 +20,27 @@ public class landUserNameValidation {
 		Scanner sc = new Scanner(System.in);
 		// System.out.println(CodelandUserNameValidation(sc.nextLine()));
 
-		String test = "usernameusernameusername";
-		int count = 0;
-
-		if (test.length() >= 4 && test.length() <= 25) {
-
-			if (Character.isAlphabetic(test.charAt(0))) {
-				System.out.println("La premier caractere est une lettre");
-
-				for (int i = 0; i < test.length(); i++) {
-					count++;
-				}
-			}
-			System.out.println("nb de caracteres : " + count);
-		}
+//		String test = "usernameusernameusername";
+//		int count = 0;
+//
+//		if (test.length() >= 4 && test.length() <= 25) {
+//
+//			if (Character.isAlphabetic(test.charAt(0))) {
+//				System.out.println("La premier caractere est une lettre");
+//
+//				for (int i = 0; i < test.length(); i++) {
+//					count++;
+//				}
+//			}
+//			System.out.println("nb de caracteres : " + count);
+//		}
 
 		sc.close();
 	}
 
-	public static String CodelandUserNameValidation(String str) {
+	public static boolean CodelandUserNameValidation(String str) {
 
-		return str;
+		String regEx = "^[A-Za-z]+[A-Za-z0-9_]$";
+		return str.matches(regEx);
 	}
 }
