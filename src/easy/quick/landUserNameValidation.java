@@ -40,7 +40,7 @@ public class landUserNameValidation {
 
 	public static boolean CodelandUserNameValidation(String str) {
 
-		String regEx = "^[A-Za-z]+[A-Za-z0-9_]$";
+		String regEx = "^[A-Za-z]{1,1}+[A-Za-z0-9_]$";
 		return str.matches(regEx);
 	}
 }
