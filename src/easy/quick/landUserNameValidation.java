@@ -25,7 +25,7 @@ public class landUserNameValidation {
 
 	public static boolean CodelandUserNameValidation(String str) {
 
-		String regEx = "^[A-Za-z][A-Za-z0-9]*[A-Za-z0-9]$";
+		String regEx = "^[A-Za-z][\\w]*[A-Za-z0-9]$";
 		/* [\\w] -> lettres + chiffres + underscore */
 		if (str.length() >= 4 && str.length() <= 25) {
 			return str.matches(regEx);
