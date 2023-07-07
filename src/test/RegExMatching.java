@@ -3,7 +3,8 @@ package test;
 public class RegExMatching {
 
 	public static boolean isValidEmail( String email) {
-		String regExp = "^.+@.+\\..+$";
+		//String regExp = "^.+@.+\\..+$";
+		String regExp = "^[A-Za-z0-9._-]+@.+\\..+$";
 		return email.matches(regExp);
 	}
 	
