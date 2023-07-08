@@ -3,7 +3,8 @@ package test;
 public class RegExMatching {
 
 	public static boolean isValidDate(String date) {
-		return false;
+		String regExp = "^\\d\\d/\\d\\d/\\d\\d(\\d\\d)?$";
+		return date.matches(regExp);
 	}
 
 	public static boolean isValidEmail(String email) {
@@ -14,9 +15,12 @@ public class RegExMatching {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(isValidEmail("martin@societe.com"));
-		System.out.println(isValidEmail("martin.societe.com"));
-		System.out.println(isValidEmail("martin@societe"));
+//		System.out.println(isValidEmail("martin@societe.com"));
+//		System.out.println(isValidEmail("martin.societe.com"));
+//		System.out.println(isValidEmail("martin@societe"));
+		System.out.println(isValidDate("30/05/2017"));
+		System.out.println(isValidDate("30/05/17"));
+		System.out.println(isValidDate("jj/mm/aaaa"));
 
 	}
 }
