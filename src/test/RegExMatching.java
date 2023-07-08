@@ -3,7 +3,8 @@ package test;
 public class RegExMatching {
 
 	public static boolean isValidDate(String date) {
-		String regExp = "^\\d\\d/\\d\\d/\\d\\d(\\d\\d)?$";
+		//String regExp = "^\\d\\d/\\d\\d/\\d\\d(\\d\\d)?$";
+		String regExp = "^[0_9]{2}/[0_9]{2}/[0_9]{2}([0_9]{2})?$";
 		return date.matches(regExp);
 	}
 
