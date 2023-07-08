@@ -4,7 +4,8 @@ public class RegExMatching {
 
 	public static boolean isValidDate(String date) {
 		//String regExp = "^\\d\\d/\\d\\d/\\d\\d(\\d\\d)?$";
-		String regExp = "^[0_9]{2}/[0_9]{2}/[0_9]{2}([0_9]{2})?$";
+		//String regExp = "^[0_9]{2}/[0_9]{2}/[0_9]{2}([0_9]{2})?$";
+		String regExp = "^{0[1-9]|[12][0-9]|3[01]}/(0[1-9]|1[0-2])/(19|20)?([0-9]{2})$"; // jj/mm/aaaa || jj/mm/aa
 		return date.matches(regExp);
 	}
 
