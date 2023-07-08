@@ -23,7 +23,9 @@ public class FindIntersection {
 	public static void main(String[] args) {
 		
 		Scanner s = new Scanner(System.in);
-		System.out.println(FindIntersection(s.nextLine()));
+		String[] test = new String[]{"1, 3, 4, 7, 13", "1, 2, 4, 13, 15"};
+		System.out.println(FindIntersection(test));
+		//System.out.println(FindIntersection(s.nextLine()));
 
 	}
 
