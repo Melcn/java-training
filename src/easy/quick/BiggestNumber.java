@@ -1,4 +1,4 @@
-package algo;
+package easy.quick;
 
 public class BiggestNumber {
 

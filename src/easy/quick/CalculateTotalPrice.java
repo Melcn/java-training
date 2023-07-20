@@ -1,4 +1,4 @@
-package algo;
+package easy.quick;
 
 import java.util.Scanner;
 
