@@ -7,15 +7,11 @@ public class CalculateTotalPrice {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
-		int a;
-		int b;
-		int tva;
-		int total;
+		double a;
+		double b;
+		double tva;
+		double total;
 
-		a = 0;
-		b = 1;
-		tva = 2;
-		total = 0;
 
 		System.out.println("Entrez prix HT");
 		a = scan.nextInt();
