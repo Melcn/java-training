@@ -4,6 +4,10 @@ public class BufferxBuilder {
 
 	private static final int LOOP_COUNT = 10_000_000;
 
+	public static void main(String[] args) {
+		withoutOptims();
+	}
+
 	public static void withoutOptims() {
 		long begin = System.currentTimeMillis();
 
