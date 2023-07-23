@@ -1,8 +1,7 @@
 package easy.quick;
 
+import java.util.Arrays;
 import java.util.Scanner;
-
-import Book.Book;
 
 public class BookMain {
 
@@ -49,6 +48,13 @@ public class BookMain {
 				break;
 
 			case 3:
+				System.out.println("Saisir le titre du livre que vous souhaitez modifier");
+				sc.nextLine();
+				enterTitle = sc.nextLine();
+				System.out.println("Entrez le nouveau titre");
+				newTitle = sc.nextLine();
+				update(enterTitle, books, newTitle);
+				System.out.println(Arrays.toString(books));
 				break;
 			case 4:
 				break;
