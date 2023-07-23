@@ -27,6 +27,16 @@ public class BookMain {
 			switch (choice) {
 
 			case 1:
+				System.out.println("Entrez un id svp");
+				book.setId(sc.nextInt());
+				sc.nextLine();
+				System.out.println("Entrez un titre svp");
+				book.setTitle(sc.nextLine());
+				System.out.println("Entrez un auteur svp");
+				book.setAuthor(sc.nextLine());
+				System.out.println("Entrez un prix svp");
+				book.setPrice(sc.nextInt());
+				addBook(book, books);
 				break;
 			case 2:
 				break;
@@ -52,5 +62,27 @@ public class BookMain {
 		System.out.println("------4. Supprimer un livre------");
 		System.out.println("-----5. Consulter les livres-----");
 		System.out.println("-----------0. Quitter------------");
+	}
+
+	public static void addBook(Book b, Book bks[]) {
+		boolean tmp = false;
+
+		for (int i = 0; i < bks.length; i++) {
+
+			if (bks[i] != null && bks[i].getTitle().equals(b.getTitle())) {
+				tmp = true;
+			}
+		}
+
+		if (tmp == false) {
+
+			for (int i = 0; i < bks.length; i++) {
+
+				if (bks[i] == null) {
+					bks[i] = b;
+					break;
+				}
+			}
+		}
 	}
 }
