@@ -27,6 +27,7 @@ public class BookMain {
 			switch (choice) {
 
 			case 1:
+
 				System.out.println("Entrez un id svp");
 				book.setId(sc.nextInt());
 				sc.nextLine();
@@ -38,8 +39,15 @@ public class BookMain {
 				book.setPrice(sc.nextInt());
 				addBook(book, books);
 				break;
+
 			case 2:
+
+				System.out.println("Saisir le titre du Livre que vous recherchez svp");
+				sc.nextLine();
+				enterTitle = sc.nextLine();
+				System.out.println(read(enterTitle, books));
 				break;
+
 			case 3:
 				break;
 			case 4:
@@ -99,4 +107,13 @@ public class BookMain {
 		return null;
 	}
 
+	public static void update(String title, Book bks[], String newTitle) {
+
+		for (int i = 0; i < bks.length; i++) {
+
+			if (bks[i] != null && bks[i].getTitle().equals(title)) {
+				bks[i].setTitle(newTitle);
+			}
+		}
+	}
 }
