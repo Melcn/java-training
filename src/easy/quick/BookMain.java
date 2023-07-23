@@ -85,4 +85,18 @@ public class BookMain {
 			}
 		}
 	}
+
+	public static Book read(String title, Book bks[]) {
+
+		for (int i = 0; i < bks.length; i++) {
+
+			if (bks[i] != null && bks[i].getTitle().equals(title)) {
+
+				return bks[i];
+			}
+
+		}
+		return null;
+	}
+
 }
