@@ -20,8 +20,26 @@ public class BookMain {
 
 		Book book = new Book();
 
-		showMenu();
-		choice = sc.nextInt();
+		do {
+			showMenu();
+			choice = sc.nextInt();
+
+			switch (choice) {
+
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+
+			}
+		} while (choice != 0);
+
 		sc.close();
 	}
 
