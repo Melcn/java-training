@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class BookMain {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
-
+		
 		Book books[] = new Book[3];
 		int choice = 0;
 		String enterTitle;
@@ -57,8 +58,12 @@ public class BookMain {
 				System.out.println(Arrays.toString(books));
 				break;
 			case 4:
+				System.out.println("Saisir le titre du livre que vous sohaitez supprimer svp");
+				enterTitle = sc.next();
+				delete(enterTitle, books);
 				break;
 			case 5:
+				System.out.println(Arrays.toString(books));
 				break;
 
 			}
@@ -119,6 +124,17 @@ public class BookMain {
 
 			if (bks[i] != null && bks[i].getTitle().equals(title)) {
 				bks[i].setTitle(newTitle);
+			}
+		}
+	}
+
+	public static void delete(String title, Book bks[]) {
+
+		for (int i = 0; i < bks.length; i++) {
+
+			if (bks[i] != null && bks[i].getTitle().equals(title)) {
+
+				bks[i] = null;
 			}
 		}
 	}
