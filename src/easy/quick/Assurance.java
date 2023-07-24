@@ -29,6 +29,48 @@ public class Assurance {
 
 		System.out.println("Saisir annee d'assurance");
 		assurance = sc.nextInt();
+
+		a = age >= 25;
+		b = year >= 2;
+		c = assurance >= 5;
+
+		if (!a && b) {
+			if (accident >= 1) {
+				cat = "refus";
+			} else {
+				cat = "rouge";
+			}
+		} else if ((a && !b) || (a && b)) {
+			if (accident == 0) {
+				cat = "orange";
+			} else if (accident == 1) {
+				cat = "rouge";
+			} else {
+				cat = "refus";
+			}
+		} else {
+			if (accident == 0) {
+				cat = "vert";
+			} else if (accident == 1) {
+				cat = "orange";
+			} else if (accident == 2) {
+				cat = "rouge";
+			} else {
+				cat = "refusé";
+			}
+		}
+
+		if (c) {
+			if (cat == "rouge") {
+				cat = "orange";
+			} else if (cat == "orange") {
+				cat = "vert";
+			} else {
+				cat = "bleu";
+			}
+		}
+
+		System.out.println(" Vous beneficiez du tarif " + cat);
 		sc.close();
 	}
 
