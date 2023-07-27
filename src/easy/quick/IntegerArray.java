@@ -10,6 +10,7 @@ public class IntegerArray {
 
 		fill(arr);
 		show(arr);
+		System.out.println("La somme :" + sum(arr));
 	}
 
 	public static void show(int[] arr) {
@@ -29,5 +30,16 @@ public class IntegerArray {
 
 		}
 		sc.close();
+	}
+
+	public static int sum(int[] t) {
+
+		int sum = 0;
+		for (int i = 0; i < t.length; i++) {
+
+			sum = sum + t[i];
+		}
+
+		return sum;
 	}
 }
