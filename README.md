@@ -26,10 +26,15 @@ I enjoy working on them from time to time, especially when I'm not engaged in la
 - SwapNumbers
 - WeekSwitch
 
+### Easy.poo
+
+- A (Employee/Society)
+
 ### Test
 
 This is where I experiment with things or learn when I encounter new concepts.
 
+- **BufferxBuilder**
 - **RegExMatching** : Learning Regular Expression with Java
 
 ##
