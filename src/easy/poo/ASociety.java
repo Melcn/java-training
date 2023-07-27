@@ -2,7 +2,6 @@ package easy.poo;
 
 import java.util.Arrays;
 
-
 public class ASociety {
 
 	private String name_society;
@@ -44,9 +43,8 @@ public class ASociety {
 		this.payroll = payroll;
 	}
 
-	
-public void hire(AEmployee arr_e[], AEmployee e) {
-		
+	public void hire(AEmployee arr_e[], AEmployee e) {
+
 		boolean b = false;
 
 		for (int i = 0; i < arr_e.length; i++) {
@@ -68,6 +66,15 @@ public void hire(AEmployee arr_e[], AEmployee e) {
 				}
 			}
 		}
+	}
+
+	public void generalIncrease(double rate) {
+
+		for (int i = 0; i < tab_employee.length; i++) {
+
+			tab_employee[i].setSalary((1 + rate / 100) * tab_employee[i].getSalary());
+		}
+
 	}
 
 	@Override
