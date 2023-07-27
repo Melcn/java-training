@@ -51,6 +51,7 @@ public class AMainTest {
 			rate = sc.nextInt();
 
 			//increase...
+			society.increase(employees, chooseId, rate);
 			break;
 
 		default:

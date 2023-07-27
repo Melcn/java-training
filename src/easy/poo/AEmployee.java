@@ -50,6 +50,18 @@ public class AEmployee {
 		SocietyName = societyName;
 	}
 
+	public void increase(AEmployee tab_e[], int chooseId, int rate) {
+
+		for (int i = 0; i < tab_e.length; i++) {
+
+			if (tab_e[i].getId() == chooseId) {
+
+				double newSalary = (1 + rate / 100) * tab_e[i].getSalary();
+				tab_e[i].setSalary(newSalary);
+			}
+		}
+	}
+
 	@Override
 	public String toString() {
 		return "AEmployee [name_employee=" + name_employee + ", id=" + id + ", salary=" + salary + ", SocietyName="
