@@ -2,6 +2,7 @@ package easy.poo;
 
 import java.util.Arrays;
 
+
 public class ASociety {
 
 	private String name_society;
@@ -41,6 +42,32 @@ public class ASociety {
 
 	public void setPayroll(double payroll) {
 		this.payroll = payroll;
+	}
+
+	
+public void hire(AEmployee arr_e[], AEmployee e) {
+		
+		boolean b = false;
+
+		for (int i = 0; i < arr_e.length; i++) {
+
+			if ((arr_e[i] != null) && (e.getId() == arr_e[i].getId())) {
+
+				b = true;
+			}
+		}
+
+		if (b == false) {
+
+			for (int i = 0; i < arr_e.length; i++) {
+
+				if (arr_e[i] == null) {
+
+					arr_e[i] = e;
+					break;
+				}
+			}
+		}
 	}
 
 	@Override
