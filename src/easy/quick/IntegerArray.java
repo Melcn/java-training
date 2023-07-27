@@ -13,6 +13,8 @@ public class IntegerArray {
 		System.out.println("La somme :" + sum(arr));
 		System.out.println("Le nombre minimum : " + minimum(arr));
 		System.out.println("L'indice du nombre maximum : " + indexMax(arr));
+		System.out.println("Le tableau opposé : " + Arrays.toString(opposite(arr)));
+
 	}
 
 	public static void show(int[] arr) {
@@ -73,5 +75,21 @@ public class IntegerArray {
 			}
 		}
 		return posMax;
+	}
+
+	public static int[] opposite(int[] arr) {
+		int tmp = 0;
+
+		for (int i = 0; i < arr.length; i++) {
+
+			for (int j = 0; j < arr.length; j++) {
+
+				tmp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = tmp;
+			}
+		}
+
+		return arr;
 	}
 }
