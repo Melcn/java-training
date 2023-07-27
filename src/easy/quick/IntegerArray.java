@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class IntegerArray {
 
 	public static void main(String[] args) {
-		int[] t = new int[6];
+		int[] arr = new int[6];
 
-		fill();
+		fill(arr);
 		show();
 	}
 
