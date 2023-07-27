@@ -12,6 +12,7 @@ public class IntegerArray {
 		show(arr);
 		System.out.println("La somme :" + sum(arr));
 		System.out.println("Le nombre minimum : " + minimum(arr));
+		System.out.println("L'indice du nombre maximum : " + indexMax(arr));
 	}
 
 	public static void show(int[] arr) {
@@ -57,5 +58,20 @@ public class IntegerArray {
 		}
 
 		return min;
+	}
+
+	public static int indexMax(int[] arr) {
+
+		int max = arr[0];
+		int posMax = 0;
+		for (int i = 0; i < arr.length; i++) {
+
+			if (arr[i] > max) {
+
+				max = arr[i];
+				posMax = i;
+			}
+		}
+		return posMax;
 	}
 }
