@@ -32,12 +32,12 @@ public class IntegerArray {
 		sc.close();
 	}
 
-	public static int sum(int[] t) {
+	public static int sum(int[] arr) {
 
 		int sum = 0;
-		for (int i = 0; i < t.length; i++) {
+		for (int i = 0; i < arr.length; i++) {
 
-			sum = sum + t[i];
+			sum = sum + arr[i];
 		}
 
 		return sum;
