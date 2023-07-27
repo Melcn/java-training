@@ -2,7 +2,6 @@ package easy.poo;
 
 import java.util.Scanner;
 
-import exam.Employe;
 
 public class AMainTest {
 
