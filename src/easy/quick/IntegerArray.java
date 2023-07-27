@@ -1,5 +1,6 @@
 package easy.quick;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class IntegerArray {
@@ -8,11 +9,11 @@ public class IntegerArray {
 		int[] arr = new int[6];
 
 		fill(arr);
-		show();
+		show(arr);
 	}
 
-	public static void show() {
-		System.out.println("fill the blank");
+	public static void show(int[] arr) {
+		System.out.println("Votre tableau : " + Arrays.toString(arr));
 	}
 
 	public static void fill(int[] arr) {
