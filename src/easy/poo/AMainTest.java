@@ -44,7 +44,13 @@ public class AMainTest {
 			break;
 
 		case 3:
+			System.out.println("id de l'employe voulez vous augmenter? ");
+			int chooseId = sc.nextInt();
 
+			System.out.println("A quel taux? ");
+			rate = sc.nextInt();
+
+			//increase...
 			break;
 
 		default:
