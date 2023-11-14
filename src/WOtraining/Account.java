@@ -29,4 +29,19 @@ public class Account {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    public double withdraw(int nb){
+        double balance = this.balance - nb;
+        return balance;
+    }
+
+    public double deposit(int nb){
+        double balance = this.balance + nb;
+        return balance;
+    }
+    @Override
+    public String toString() {
+        return  name + '\''
+                 + balance;
+    }
 }
