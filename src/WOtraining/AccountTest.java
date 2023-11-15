@@ -19,5 +19,10 @@ public class AccountTest {
         System.out.println("End state");
         System.out.println(artosAccount.toString());
         System.out.println(artosSwissAccount.toString());
+
+        /* ---------------------------------------------------------- */
+
+        Account myAccount = new Account("My account", 0);
+        Account mattAccount = new Account("Matthews account", 1000);
     }
 }
