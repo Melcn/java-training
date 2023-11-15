@@ -18,6 +18,9 @@ public class Rational {
     }
 
     public void setDenominateur(int denominateur) {
+        if(denominateur == 0){
+            throw new RuntimeException( "denominator cannot be null ");
+        }
         this.denominateur = denominateur;
     }
 }
