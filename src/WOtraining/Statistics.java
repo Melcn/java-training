@@ -27,15 +27,15 @@ public class Statistics {
     }
 
     public void addNumber(int number) {
-
+        count += number;
 
     }
 
-    public int sum() {
+    /*public int sum() {
         // write code here
     }
 
     public double average() {
         // write code here
-    }
+    }*/
 }
