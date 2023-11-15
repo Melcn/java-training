@@ -8,4 +8,9 @@ public class Debt {
     public Debt(double initialBalance, double initialInterestRate){
 
     }
+
+    public void printBalance(){
+        System.out.println(this.initialBalance + " " + this.initialInterestRate);
+
+    }
 }
