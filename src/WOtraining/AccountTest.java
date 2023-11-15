@@ -6,8 +6,8 @@ public class AccountTest {
 
     public static void main(String[] arg){
 
-        Account artosAccount = new Account("Arto's account", 100.00);
-        Account artosSwissAccount = new Account("Arto's account in Switzerland", 1000000.00);
+        Account artosAccount = new Account("Arto's account", 100);
+        Account artosSwissAccount = new Account("Arto's account in Switzerland", 1000000);
 
         System.out.println("Initial state");
         System.out.println(artosAccount.toString());
@@ -17,7 +17,7 @@ public class AccountTest {
         artosSwissAccount.deposit(200);
 
         System.out.println("End state");
-        System.out.println(artosAccount);
-        System.out.println(artosSwissAccount);
+        System.out.println(artosAccount.toString());
+        System.out.println(artosSwissAccount.toString());
     }
 }

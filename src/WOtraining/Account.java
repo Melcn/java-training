@@ -3,12 +3,12 @@ package WOtraining;
 public class Account {
 
     private String name;
-    private double balance;
+    private Integer balance;
 
     public Account(){
 
     }
-    public Account(String name, double balance){
+    public Account(String name, Integer balance){
 
         this.name = name;
         this.balance = balance;
@@ -26,18 +26,16 @@ public class Account {
         return balance;
     }
 
-    public void setBalance(double balance) {
+    public void setBalance(Integer balance) {
         this.balance = balance;
     }
 
-    public double withdraw(int nb){
-        double balance = this.balance - nb;
-        return balance;
+    public void withdraw(Integer nb){
+        balance = balance - nb;
     }
 
-    public double deposit(int nb){
-        double b = this.balance + nb;
-        return b;
+    public void deposit(Integer nb){
+        balance = balance + nb;
     }
     @Override
     public String toString() {
