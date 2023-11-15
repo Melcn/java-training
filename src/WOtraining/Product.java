@@ -11,4 +11,7 @@ public class Product {
         this.initialPrice = initialPrice;
     }
 
+    public void printProduct() {
+        System.out.println(this.initialName + " " + this.initialPrice + " " + this.initialQuantity);
+    }
 }
