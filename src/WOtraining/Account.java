@@ -37,6 +37,15 @@ public class Account {
     public void deposit(Integer nb){
         balance = balance + nb;
     }
+
+    public void sendMoney(Account acc, Integer amount){
+        if(balance >= amount) {
+            balance = balance - amount;
+            acc.deposit(amount);
+        }else{
+            System.out.println("nop");
+        }
+    }
     @Override
     public String toString() {
         return  name + '\''
