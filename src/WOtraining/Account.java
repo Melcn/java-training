@@ -36,8 +36,8 @@ public class Account {
     }
 
     public double deposit(int nb){
-        double balance = this.balance + nb;
-        return balance;
+        double b = this.balance + nb;
+        return b;
     }
     @Override
     public String toString() {
