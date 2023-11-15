@@ -5,5 +5,6 @@ public class ProductTest {
 
         Product pr = new Product("Banane", 3, 5);
 
+        pr.printProduct();
     }
 }
