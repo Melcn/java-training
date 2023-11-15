@@ -31,9 +31,7 @@ public class Statistics {
         count++;
     }
 
-    /*
-
     public double average() {
-        // write code here
-    }*/
+        return sum / count;
+    }
 }

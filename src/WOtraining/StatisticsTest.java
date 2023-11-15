@@ -11,6 +11,6 @@ public class StatisticsTest {
         statistics.addNumber(2);
         System.out.println("Count: " + statistics.getCount());
         System.out.println("Sum: " + statistics.getSum());
-        /*System.out.println("Average: " + statistics.average());*/
+        System.out.println("Average: " + statistics.average());
     }
 }
