@@ -8,6 +8,6 @@ public class RationalTest {
         r.setDenominateur(0);
         r.setNumerator(3);
 
-        System.out.println();
+        System.out.printf("[%d/%d]\n", r.getNumerator(), r.getDenominateur() );
     }
 }
