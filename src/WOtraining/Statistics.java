@@ -27,8 +27,8 @@ public class Statistics {
     }
 
     public void addNumber(int number) {
-        count += number;
-
+        sum += number;
+        count++;
     }
 
     /*public int sum() {
