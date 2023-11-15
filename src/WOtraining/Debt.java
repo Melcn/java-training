@@ -13,4 +13,8 @@ public class Debt {
         System.out.println(this.initialBalance + " " + this.initialInterestRate);
 
     }
+
+    public void waitOneYear(){
+
+    }
 }
