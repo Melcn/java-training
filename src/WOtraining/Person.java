@@ -26,8 +26,7 @@ public class Person {
     }
 
     public double bodyMassIndex() {
-        double heigthPerHundred = this.height / 100.0;
-        return this.weight / (heigthPerHundred * heigthPerHundred);
+        return this.weight / (this.height * this.height);
     }
 
     public double maximumHeartRate() {
