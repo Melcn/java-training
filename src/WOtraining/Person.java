@@ -9,8 +9,8 @@ public class Person {
     public Person(String name) {
         this.name = name;
         this.age = age;
-        this.weight = 0;
-        this.height = 0;
+        this.weight = weight;
+        this.height = weight;
     }
 
     public String getName() {
@@ -33,7 +33,8 @@ public class Person {
         return 206.3 - (0.711 * this.age);
     }
 
-    public void printPerson() {
-        System.out.println(this.name + ", age " + this.age + " years");
+    public String toString() {
+        return this.name + ", BMI: " + this.bodyMassIndex()
+                + ", maximum heart rate: " + this.maximumHeartRate();
     }
 }
