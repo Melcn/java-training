@@ -13,4 +13,10 @@ public class Rectangle {
     public void widen() {
         this.width = this.width + 1;
     }
+
+    public void narrow() {
+        if (this.width > 0) {
+            this.width = this.width - 1;
+        }
+    }
 }
