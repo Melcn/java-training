@@ -22,4 +22,8 @@ public class Book {
     public String getPages() {
         return pages;
     }
+
+    public String toString() {
+        return "auteur: " + author + " name : " + name + " pages ";
+    }
 }
