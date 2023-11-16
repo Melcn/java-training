@@ -13,6 +13,6 @@ public class Cube {
     }
 
     public String toString() {
-        return "The length of the edge is " + edgeLength + " and the volume : " + edgeLength.volume();
+        return "The length of the edge is " + edgeLength + " and the volume : " + volume();
     }
 }
