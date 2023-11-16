@@ -1,18 +1,22 @@
 package WOtraining;
 
+import java.util.Scanner;
+
 public class PersonTest {
 
     public static void main(String[] args) {
-        Person matti = new Person("Matti");
-        Person juhana = new Person("Juhana");
+        Scanner reader = new Scanner(System.in);
 
-        matti.setHeight(180);
-        matti.setWeight(86);
+        System.out.println("What's your name?");
+        String name = reader.nextLine();
+        System.out.println("What's your age?");
+        int age = Integer.valueOf(reader.nextLine());
+        System.out.println("What's your weight?");
+        double weight = Double.valueOf(reader.nextLine());
+        System.out.println("What's your height?");
+        double height = Double.valueOf(reader.nextLine());
 
-        juhana.setHeight(175);
-        juhana.setWeight(64);
-
-        System.out.println(matti.getName() + ", body mass index is " + matti.bodyMassIndex());
-        System.out.println(juhana.getName() + ", body mass index is " + juhana.bodyMassIndex());
+        Person person = new Person(name, age, weight, height);
+        System.out.println(person);
     }
 }
