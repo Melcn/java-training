@@ -23,4 +23,8 @@ public class Rectangle {
     public int surfaceArea() {
         return this.width * this.height;
     }
+
+    public String toString() {
+        return "(" + this.width + ", " + this.height + ")";
+    }
 }
