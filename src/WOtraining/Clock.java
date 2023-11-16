@@ -23,4 +23,8 @@ public class Clock {
             }
         }
     }
+
+    public String toString() {
+        return hours + ":" + minutes + ":" + seconds;
+    }
 }
