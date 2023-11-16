@@ -4,11 +4,12 @@ public class Book {
 
     private String author;
     private String name;
-    private String pages;
+    private int pages;
 
     public Book(String author, String name, int pages) {
         this.author = author;
         this.name = name;
+        this.pages = pages;
     }
 
     public String getAuthor() {
@@ -19,7 +20,7 @@ public class Book {
         return name;
     }
 
-    public String getPages() {
+    public int getPages() {
         return pages;
     }
 
