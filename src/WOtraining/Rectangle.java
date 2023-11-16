@@ -9,4 +9,8 @@ public class Rectangle {
         this.width = width;
         this.height = height;
     }
+
+    public void widen() {
+        this.width = this.width + 1;
+    }
 }
