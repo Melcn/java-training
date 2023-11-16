@@ -3,14 +3,14 @@ package WOtraining;
 public class Person {
     private String name;
     private int age;
-    private int weight;
-    private int height;
+    private double weight;
+    private double height;
 
-    public Person(String name) {
+    public Person(String name, int age, double weight, double height) {
         this.name = name;
         this.age = age;
-        this.weight = 0;
-        this.height = 0;
+        this.weight = weight;
+        this.height = weight;
     }
 
     public String getName() {
@@ -26,11 +26,15 @@ public class Person {
     }
 
     public double bodyMassIndex() {
-        double heigthPerHundred = this.height / 100.0;
-        return this.weight / (heigthPerHundred * heigthPerHundred);
+        return this.weight / (this.height * this.height);
     }
 
-    public void printPerson() {
-        System.out.println(this.name + ", age " + this.age + " years");
+    public double maximumHeartRate() {
+        return 206.3 - (0.711 * this.age);
+    }
+
+    public String toString() {
+        return this.name + ", BMI: " + this.bodyMassIndex()
+                + ", maximum heart rate: " + this.maximumHeartRate();
     }
 }
