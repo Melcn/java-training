@@ -3,11 +3,18 @@ package WOtraining;
 public class ClockTest {
 
     public static void main(String[] argv) {
-
+/*
         ClockHand hours = new ClockHand(24);
         ClockHand minutes = new ClockHand(60);
-        ClockHand seconds = new ClockHand(60);
+        ClockHand seconds = new ClockHand(60); */
+        Clock clock = new Clock();
 
+        while (true) {
+            System.out.println(clock);
+            clock.advance();
+        }
+
+        /*
         while (true) {
 
             System.out.println(hours + ":" + minutes + ":" + seconds);
@@ -21,5 +28,8 @@ public class ClockTest {
                 }
             }
         }
+
+*/
+
     }
 }
