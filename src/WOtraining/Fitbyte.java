@@ -3,10 +3,16 @@ package WOtraining;
 public class Fitbyte {
 
     private int age;
-    private int restingHeratRate;
+    private double restingHeartRate;
+    private double maximumHeartRate;
+    private double targetHeartRatePercentage;
 
-    public Fitbyte(int age, int restingHeartRate) {
+    public Fitbyte(int age, double restingHeartRate) {
         this.age = age;
-        this.restingHeratRate = restingHeartRate;
+        this.restingHeartRate = restingHeartRate;
+    }
+
+    public double targetHeartRate(double percentageOfMaximum) {
+        return (maximumHeartRate - restingHeartRate) * (percentageOfMaximum + restingHeartRate);
     }
 }
