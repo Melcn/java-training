@@ -21,5 +21,12 @@ public class ClockHand {
     public int value() {
         return this.value;
     }
-    
+
+    public String toString() {
+        if (this.value < 10) {
+            return "0" + this.value;
+        }
+
+        return "" + this.value;
+    }
 }
