@@ -30,6 +30,10 @@ public class Person {
         return this.weight / (heigthPerHundred * heigthPerHundred);
     }
 
+    public double maximumHeartRate() {
+        return 206.3 - (0.711 * this.age);
+    }
+
     public void printPerson() {
         System.out.println(this.name + ", age " + this.age + " years");
     }
