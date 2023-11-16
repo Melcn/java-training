@@ -12,4 +12,15 @@ public class Clock {
         this.seconds = new ClockHand(60);
     }
 
+    public void advance() {
+        this.seconds.advance();
+
+        if (this.seconds.value() == 0) {
+            this.minutes.advance();
+
+            if (this.minutes.value() == 0) {
+                this.hours.advance();
+            }
+        }
+    }
 }
