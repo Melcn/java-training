@@ -19,4 +19,8 @@ public class Rectangle {
             this.width = this.width - 1;
         }
     }
+
+    public int surfaceArea() {
+        return this.width * this.height;
+    }
 }
