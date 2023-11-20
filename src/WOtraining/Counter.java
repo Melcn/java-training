@@ -24,4 +24,8 @@ public class Counter {
         startValue--;
     }
 
+    @Override
+    public String toString() {
+        return "Value : " + startValue;
+    }
 }
