@@ -51,7 +51,15 @@ public class Person {
     }
 
     public int ageAsYears() {
-        return 0;
+        return birthday.getYear();
+    }
+
+    public boolean olderThan(Person p) {
+        if (this.birthday.getYear() < p.birthday.getYear()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public String toString() {
