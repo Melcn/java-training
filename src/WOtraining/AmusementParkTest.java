@@ -24,5 +24,6 @@ public class AmusementParkTest {
             System.out.println(jasper.getName() + " may not enter the ride");
         }
 
+        System.out.println(waterTrack);
     }
 }
