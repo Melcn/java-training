@@ -9,5 +9,7 @@ public class AmusementParkTest {
         Person jasper = new Person("Jasper");
         jasper.setWeight(34);
         jasper.setHeight(132);
+
+        AmusementParkRide waterTrack = new AmusementParkRide("Water track", 140);
     }
 }
