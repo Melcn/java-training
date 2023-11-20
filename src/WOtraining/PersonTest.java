@@ -16,7 +16,7 @@ public class PersonTest {
         paul = null;
 
         paul.growOlder(10);
-        System.out.println(paul);*/
+        System.out.println(paul);
 
         HealthStation childrensHospital = new HealthStation();
 
@@ -35,6 +35,8 @@ public class PersonTest {
         childrensHospital.weigh(ethan);
         childrensHospital.weigh(ethan);
 
-        System.out.println("weighings performed: " + childrensHospital.weighings());
+        System.out.println("weighings performed: " + childrensHospital.weighings());*/
+
+        
     }
 }

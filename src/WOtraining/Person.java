@@ -2,17 +2,18 @@ package WOtraining;
 
 public class Person {
     private String name;
-    private int age;
+    private SimpleDate birthday;
     private int weight;
     private int height;
 
-    public Person(String name) {
-        this(name, 0, 0, 0);
+    public Person(String name, SimpleDate date) {
+        this.name = name;
+        this.birthday = date;
     }
 
-    public Person(String name, int age, int height, int weight) {
+    public Person(String name, SimpleDate birthday, int height, int weight) {
         this.name = name;
-        this.age = age;
+        this.birthday = birthday;
         this.weight = weight;
         this.height = height;
     }
@@ -21,9 +22,6 @@ public class Person {
         return this.name;
     }
 
-    public int getAge() {
-        return this.age;
-    }
 
     public int getHeight() {
         return this.height;
@@ -33,9 +31,6 @@ public class Person {
         this.height = newHeight;
     }
 
-    public void growOlder() {
-        this.age = this.age + 1;
-    }
 
     public int getWeight() {
         return weight;
@@ -52,6 +47,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return this.name + ", age " + this.age + " years";
+        return this.name + ", age " + this.birthday + " years";
     }
 }
