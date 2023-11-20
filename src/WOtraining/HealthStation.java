@@ -12,7 +12,8 @@ public class HealthStation {
     }
 
     public void feed(Person person) {
-        person.setWeight(+1);
+        int nw = person.getWeight() + 1;
+        person.setWeight(nw);
 
     }
 
