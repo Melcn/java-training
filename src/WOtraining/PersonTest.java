@@ -16,7 +16,7 @@ public class PersonTest {
         System.out.println("What's your height?");
         double height = Double.valueOf(reader.nextLine());
 
-        Person person = new Person(name, age, weight, height);
+        Person person = new Person(name, age);
         System.out.println(person);
     }
 }

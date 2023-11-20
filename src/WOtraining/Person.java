@@ -13,6 +13,13 @@ public class Person {
         this.height = 0;
     }
 
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.weight = 0;
+        this.height = 0;
+    }
+
     public void printPerson() {
         System.out.println(this.name + " is " + this.age + " years old");
     }
