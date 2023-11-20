@@ -1,6 +1,7 @@
 package WOtraining;
 
 public class HealthStation {
+    private int count;
 
     public HealthStation() {
 
@@ -17,5 +18,8 @@ public class HealthStation {
 
     }
 
+    public int weighings() {
+        return 0;
+    }
 
 }
