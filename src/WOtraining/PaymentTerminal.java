@@ -24,6 +24,16 @@ public class PaymentTerminal {
 
     }
 
+    public boolean eatAffordably(PaymentCard card) {
+        if (card.balance() >= 2.5) {
+            card.takeMoney(2.5);
+            affordableMeals++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public double eatHeartily(double payment) {
         if (payment >= 4.3) {
             this.money = this.money + 4.3;
