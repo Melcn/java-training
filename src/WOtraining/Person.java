@@ -28,6 +28,10 @@ public class Person {
         this.age++;
     }
 
+    public void growOlder(int years) {
+        this.age = this.age + years;
+    }
+    
     public boolean isAdult() {
         if (this.age < 18) {
             return false;
