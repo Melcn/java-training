@@ -12,5 +12,9 @@ public class Counter {
         this.startValue = 0;
     }
 
-    
+    public int value() {
+        return 0;
+    }
+
+
 }
