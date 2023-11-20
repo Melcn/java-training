@@ -17,53 +17,41 @@ public class Person {
         this.height = height;
     }
 
-    public void printPerson() {
-        System.out.println(this.name + " is " + this.age + " years old");
+    public String getName() {
+        return this.name;
     }
 
-    public void growOlder() {
-        this.age++;
-    }
-
-    public void growOlder(int years) {
-        this.age = this.age + years;
-    }
-
-    public boolean isAdult() {
-        if (this.age < 18) {
-            return false;
-        }
-
-        return true;
-    }
-
-    public double bodyMassIndex() {
-        double heightInMeters = this.height / 100.0;
-
-        return this.weight / (heightInMeters * heightInMeters);
-    }
-
-    public String toString() {
-        return this.name + " is " + this.age + " years old, their BMI is " + this.bodyMassIndex();
+    public int getAge() {
+        return this.age;
     }
 
     public int getHeight() {
         return this.height;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
+    public void setHeight(int newHeight) {
+        this.height = newHeight;
+    }
+
+    public void growOlder() {
+        this.age = this.age + 1;
     }
 
     public int getWeight() {
-        return this.weight;
+        return weight;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setWeight(int newWeight) {
+        this.weight = newWeight;
     }
 
-    public String getName() {
-        return this.name;
+    public double bodyMassIndex() {
+        double heightPerHundred = this.height / 100.0;
+        return this.weight / (heightPerHundred * heightPerHundred);
+    }
+
+    @Override
+    public String toString() {
+        return this.name + ", age " + this.age + " years";
     }
 }

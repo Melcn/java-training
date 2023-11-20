@@ -2,7 +2,19 @@ package WOtraining;
 
 public class HealthStation {
 
-    public int weight(Person person) {
-        return -1;
+    public HealthStation() {
+
     }
+
+    public int weigh(Person person) {
+
+        return person.getWeight();
+    }
+
+    public void feed(Person person) {
+        person.setWeight(+1);
+
+    }
+
+
 }
