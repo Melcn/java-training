@@ -14,7 +14,15 @@ public class PaymentTerminal {
     }
 
     public double eatAffordably(double payment) {
-        return 0.0;
+        if (payment >= affordableMeals) {
+            this.money = +affordableMeals;
+
+            return payment - affordableMeals;
+        } else {
+            return payment;
+        }
+
+
     }
 
     public double eatHeartily(double payment) {
