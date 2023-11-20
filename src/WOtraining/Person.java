@@ -50,6 +50,10 @@ public class Person {
         return this.weight / (heightPerHundred * heightPerHundred);
     }
 
+    public int ageAsYears() {
+        return 0;
+    }
+
     public String toString() {
         return this.name + ", born on " + this.birthday;
     }
