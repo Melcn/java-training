@@ -7,17 +7,14 @@ public class Person {
     private int height;
 
     public Person(String name) {
-        this.name = name;
-        this.age = 0;
-        this.weight = 0;
-        this.height = 0;
+        this(name, 0, 0, 0);
     }
 
-    public Person(String name, int age) {
+    public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
-        this.weight = 0;
-        this.height = 0;
+        this.weight = weight;
+        this.height = height;
     }
 
     public void printPerson() {
@@ -31,7 +28,7 @@ public class Person {
     public void growOlder(int years) {
         this.age = this.age + years;
     }
-    
+
     public boolean isAdult() {
         if (this.age < 18) {
             return false;
