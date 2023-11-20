@@ -13,15 +13,15 @@ public class Counter {
     }
 
     public int value() {
-        return 0;
+        return startValue;
     }
 
     public void increase() {
-
+        startValue++;
     }
 
     public void decrease() {
-
+        startValue--;
     }
 
 }
