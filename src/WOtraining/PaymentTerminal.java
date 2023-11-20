@@ -3,12 +3,14 @@ package WOtraining;
 public class PaymentTerminal {
 
     private double money;
-    private int affordableMeals;
+    private double affordableMeals;
 
-    private int heartyMeals;
+    private double heartyMeals;
 
     public PaymentTerminal() {
         this.money = 1000;
+        this.affordableMeals = 2.5;
+        this.heartyMeals = 4.3;
     }
 
     public double eatAffordably(double payment) {
