@@ -36,7 +36,12 @@ public class PersonTest {
         childrensHospital.weigh(ethan);
 
         System.out.println("weighings performed: " + childrensHospital.weighings());*/
+        SimpleDate date = new SimpleDate(1, 1, 780);
+        Person muhammad = new Person("Muhammad ibn Musa al-Khwarizmi", date);
+        Person pascal = new Person("Blaise Pascal", 19, 6, 1623);
 
-        
+        System.out.println(muhammad);
+        System.out.println(pascal);
+
     }
 }
