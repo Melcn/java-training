@@ -11,6 +11,11 @@ public class Person {
         this.birthday = date;
     }
 
+    public Person(String name, int day, int month, int year) {
+        this.name = name;
+        this.birthday = new SimpleDate(day, month, year);
+    }
+
     public Person(String name, SimpleDate birthday, int height, int weight) {
         this.name = name;
         this.birthday = birthday;
@@ -45,8 +50,7 @@ public class Person {
         return this.weight / (heightPerHundred * heightPerHundred);
     }
 
-    @Override
     public String toString() {
-        return this.name + ", age " + this.birthday + " years";
+        return this.name + ", born on " + this.birthday;
     }
 }
