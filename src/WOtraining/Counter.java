@@ -20,8 +20,16 @@ public class Counter {
         startValue++;
     }
 
+    public void increase(int increaseBy) {
+        this.startValue = +increaseBy;
+    }
+
     public void decrease() {
         startValue--;
+    }
+
+    public void decrease(int decreaseBy) {
+        this.startValue = +decreaseBy;
     }
 
     @Override
