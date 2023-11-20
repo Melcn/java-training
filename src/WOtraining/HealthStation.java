@@ -4,11 +4,11 @@ public class HealthStation {
     private int count;
 
     public HealthStation() {
-
+        this.count = 0;
     }
 
     public int weigh(Person person) {
-
+        count++;
         return person.getWeight();
     }
 
@@ -19,7 +19,7 @@ public class HealthStation {
     }
 
     public int weighings() {
-        return 0;
+        return this.count;
     }
 
 }
