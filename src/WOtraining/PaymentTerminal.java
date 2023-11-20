@@ -3,21 +3,20 @@ package WOtraining;
 public class PaymentTerminal {
 
     private double money;
-    private double affordableMeals;
+    private int affordableMeals;
 
-    private double heartyMeals;
+    private int heartyMeals;
 
     public PaymentTerminal() {
         this.money = 1000;
-        this.affordableMeals = 2.5;
-        this.heartyMeals = 4.3;
+
     }
 
     public double eatAffordably(double payment) {
-        if (payment >= affordableMeals) {
-            this.money = +affordableMeals;
-
-            return payment - affordableMeals;
+        if (payment >= 2.5) {
+            this.money = this.money + 2.5;
+            affordableMeals++;
+            return payment - 2.5;
         } else {
             return payment;
         }
@@ -26,7 +25,13 @@ public class PaymentTerminal {
     }
 
     public double eatHeartily(double payment) {
-        return 0.0;
+        if (payment >= 4.3) {
+            this.money = this.money + 4.3;
+            heartyMeals++;
+            return payment - 4.3;
+        } else {
+            return payment;
+        }
     }
 
     public String toString() {
