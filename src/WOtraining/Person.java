@@ -3,38 +3,67 @@ package WOtraining;
 public class Person {
     private String name;
     private int age;
-    private double weight;
-    private double height;
+    private int weight;
+    private int height;
 
-    public Person(String name, int age, double weight, double height) {
+    public Person(String name) {
+        this(name, 0, 0, 0);
+    }
+
+    public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
         this.weight = weight;
-        this.height = weight;
+        this.height = height;
     }
 
-    public String getName() {
-        return name;
+    public void printPerson() {
+        System.out.println(this.name + " is " + this.age + " years old");
     }
 
-    public void setHeight(int newHeight) {
-        this.height = newHeight;
+    public void growOlder() {
+        this.age++;
     }
 
-    public void setWeight(int newWeight) {
-        this.weight = newWeight;
+    public void growOlder(int years) {
+        this.age = this.age + years;
+    }
+
+    public boolean isAdult() {
+        if (this.age < 18) {
+            return false;
+        }
+
+        return true;
     }
 
     public double bodyMassIndex() {
-        return this.weight / (this.height * this.height);
-    }
+        double heightInMeters = this.height / 100.0;
 
-    public double maximumHeartRate() {
-        return 206.3 - (0.711 * this.age);
+        return this.weight / (heightInMeters * heightInMeters);
     }
 
     public String toString() {
-        return this.name + ", BMI: " + this.bodyMassIndex()
-                + ", maximum heart rate: " + this.maximumHeartRate();
+        return this.name + " is " + this.age + " years old, their BMI is " + this.bodyMassIndex();
+    }
+
+    public int getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWeight() {
+        return this.weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getName() {
+        return this.name;
     }
 }
