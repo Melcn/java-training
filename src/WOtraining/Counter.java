@@ -16,5 +16,12 @@ public class Counter {
         return 0;
     }
 
+    public void increase() {
+
+    }
+
+    public void decrease() {
+
+    }
 
 }
