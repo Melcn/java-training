@@ -16,6 +16,13 @@ public class PaymentCard {
     }
 
     public boolean takeMoney(double amount) {
-        return false;
+
+        if (balance >= amount) {
+            this.balance = this.balance - amount;
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }
