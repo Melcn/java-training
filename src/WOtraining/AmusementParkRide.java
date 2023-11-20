@@ -9,6 +9,14 @@ public class AmusementParkRide {
         this.lowestHeight = lowestHeight;
     }
 
+    public boolean allowedToRide(Person person) {
+        if (person.getHeight() < this.lowestHeight) {
+            return false;
+        }
+
+        return true;
+    }
+
     public String toString() {
         return this.name + ", minimum height : " + this.lowestHeight;
     }
