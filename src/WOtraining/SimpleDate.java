@@ -23,4 +23,9 @@ public class SimpleDate {
     public int getYear() {
         return this.year;
     }
+
+    @Override
+    public String toString() {
+        return this.day + "." + this.month + "." + this.year;
+    }
 }
