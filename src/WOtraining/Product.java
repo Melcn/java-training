@@ -1,17 +1,17 @@
 package WOtraining;
 
 public class Product {
-    private String initialName;
-    private double initialPrice;
-    private int initialQuantity;
+    private String name;
+    private String location;
+    private int weight;
 
-    public Product (String initialName, double initialPrice, int initialQuantity){
-        this.initialName = initialName;
-        this.initialQuantity = initialQuantity;
-        this.initialPrice = initialPrice;
+    public Product(String name, double location, int weight) {
+        this.name = name;
+        this.weight = weight;
+        this.location = location;
     }
 
     public void printProduct() {
-        System.out.println(this.initialName + " " + this.initialPrice + " " + this.initialQuantity);
+        System.out.println(this.name + " " + this.location + " " + this.weight);
     }
 }
