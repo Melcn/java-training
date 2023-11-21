@@ -14,6 +14,12 @@ public class Apartment {
     }
 
     public boolean largerThan(Apartment compared) {
-        return false;
+
+        if (this.squares > compared.getSquares) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }
