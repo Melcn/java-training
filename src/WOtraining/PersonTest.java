@@ -41,7 +41,7 @@ public class PersonTest {
         Person pascal = new Person("Blaise Pascal", 19, 6, 1623);
 
         System.out.println(muhammad);
-        System.out.println(pascal);*/
+        System.out.println(pascal);
 
         Person muhammad = new Person("Muhammad ibn Musa al-Khwarizmi", 1, 1, 780);
         Person pascal = new Person("Blaise Pascal", 19, 6, 1623);
@@ -64,7 +64,23 @@ public class PersonTest {
         System.out.println(d3 + " is earlier than " + d2 + ": " + d3.before(d2));
 
         System.out.println(d4 + " is earlier than " + d1 + ": " + d4.before(d1));
-        System.out.println(d1 + " is earlier than " + d4 + ": " + d1.before(d4));
+        System.out.println(d1 + " is earlier than " + d4 + ": " + d1.before(d4));*/
 
+        SimpleDate date = new SimpleDate(24, 3, 2017);
+        SimpleDate date2 = new SimpleDate(23, 7, 2017);
+
+        Person leo = new Person("Leo", date, 62, 9);
+        Person lily = new Person("Lily", date2, 65, 8);
+
+        if (leo.equals(lily)) {
+            System.out.println("Is this quite correct?");
+        }
+
+        Person leoWithDifferentWeight = new Person("Leo", date, 62, 10);
+
+        if (leo.equals(leoWithDifferentWeight)) {
+            System.out.println("Is this quite correct?");
+
+        }
     }
 }
