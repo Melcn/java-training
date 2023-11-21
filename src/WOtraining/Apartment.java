@@ -46,6 +46,7 @@ public class Apartment {
     }
 
     public boolean moreExpensiveThan(Apartment compared) {
-        return false;
+
+        return (this.getPricePerSquare() * this.getSquares()) > (compared.getPricePerSquare() * compared.getSquares());
     }
 }
