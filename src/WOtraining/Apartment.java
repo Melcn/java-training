@@ -17,6 +17,10 @@ public class Apartment {
         return squares;
     }
 
+    public int getPricePerSquare() {
+        return pricePerSquare;
+    }
+
     public boolean largerThan(Apartment compared) {
 
         if (this.squares > compared.getSquares()) {
