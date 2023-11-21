@@ -44,4 +44,8 @@ public class Apartment {
         }
         return v;
     }
+
+    public boolean moreExpensiveThan(Apartment compared) {
+        return false;
+    }
 }
