@@ -10,14 +10,21 @@ public class Menu {
     }
 
     public void addMeal(String meal) {
-
+        this.meals.add(meal);
     }
 
-    public String printMeals() {
-        return "meal";
+    public void printMeals() {
+        for (String m : meals
+        ) {
+            System.out.println(m);
+        }
     }
 
     public void clearMenu() {
+        for (String m : meals
+        ) {
+            meals.remove(m);
+        }
 
     }
 }
