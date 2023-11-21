@@ -57,39 +57,14 @@ public class Person {
         return birthday.getYear();
     }
 
-    public boolean olderThan(Person compared) {
-        int ownYear = this.getBirthday().getYear();
-        int comparedYear = compared.getBirthday().getYear();
 
-        if (ownYear < comparedYear) {
-            return true;
-        }
-
-        if (ownYear > comparedYear) {
-            return false;
-        }
-
-        int ownMonth = this.getBirthday().getMonth();
-        int comparedMonth = compared.getBirthday().getMonth();
-
-        if (ownMonth < comparedMonth) {
-            return true;
-        }
-
-        if (ownMonth > comparedMonth) {
-            return false;
-        }
-
-        int ownDay = this.getBirthday().getDay();
-        int comparedDay = compared.getBirthday().getDay();
-
-        if (ownDay < comparedDay) {
+    public boolean olderThan(Person compared){
+        if(this.birthday.before(compared.getBirthday()){
             return true;
         }
 
         return false;
     }
-
     public String toString() {
         return this.name + ", born on " + this.birthday;
     }
