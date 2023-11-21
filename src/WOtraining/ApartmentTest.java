@@ -10,5 +10,9 @@ public class ApartmentTest {
 
         System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));
         System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));
+
+        System.out.println(" ***************************************** ");
+        System.out.println(manhattanStudioApt.priceDifference(atlantaTwoBedroomApt));
+        System.out.println(bangorThreeBedroomApt.priceDifference(atlantaTwoBedroomApt));
     }
 }
