@@ -11,6 +11,19 @@ public class Stack {
     }
 
     public boolean isEmpty() {
-        return false;
+        return true;
+
+    }
+
+    public void add(String value) {
+
+    }
+
+    public ArrayList<String> values() {
+        return stacks;
+    }
+
+    public String take() {
+        return "";
     }
 }
