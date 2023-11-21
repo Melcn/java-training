@@ -25,7 +25,7 @@ public class SimpleDate {
     }
 
     public boolean before(SimpleDate compared) {
-        // first compare years
+
         if (this.year < compared.year) {
             return true;
         }
@@ -34,7 +34,6 @@ public class SimpleDate {
             return false;
         }
 
-        // years are same, compare months
         if (this.month < compared.month) {
             return true;
         }
@@ -42,8 +41,7 @@ public class SimpleDate {
         if (this.month > compared.month) {
             return false;
         }
-
-        // years and months are same, compare days
+        
         if (this.day < compared.day) {
             return true;
         }
