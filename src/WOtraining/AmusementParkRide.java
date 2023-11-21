@@ -1,14 +1,18 @@
 package WOtraining;
 
+import java.util.ArrayList;
+
 public class AmusementParkRide {
     private String name;
     private int minimumHeight;
     private int visitors;
+    private ArrayList<Person> riding;
 
     public AmusementParkRide(String name, int minimumHeight) {
         this.name = name;
         this.minimumHeight = minimumHeight;
         this.visitors = 0;
+        this.riding = new ArrayList<>();
     }
 
     public boolean isAllowedOn(Person person) {
@@ -17,6 +21,7 @@ public class AmusementParkRide {
         }
 
         this.visitors++;
+        this.riding.add(person);
         return true;
     }
 
