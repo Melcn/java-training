@@ -26,4 +26,8 @@ public class Apartment {
         }
 
     }
+
+    public int priceDifference(Apartment compared) {
+        return 0;
+    }
 }
