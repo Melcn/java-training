@@ -32,6 +32,16 @@ public class Apartment {
     }
 
     public int priceDifference(Apartment compared) {
-        return 0;
+
+        int n = this.getPricePerSquare() * this.getSquares();
+        int nb = compared.getPricePerSquare() * compared.getSquares();
+        int v = 0;
+
+        if (n > nb) {
+            v = n - nb;
+        } else {
+            v = nb - n;
+        }
+        return v;
     }
 }
