@@ -58,13 +58,14 @@ public class Person {
     }
 
 
-    public boolean olderThan(Person compared){
-        if(this.birthday.before(compared.getBirthday()){
+    public boolean olderThan(Person compared) {
+        if (this.birthday.before(compared.getBirthday())) {
             return true;
         }
 
         return false;
     }
+
     public String toString() {
         return this.name + ", born on " + this.birthday;
     }
