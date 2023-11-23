@@ -9,4 +9,9 @@ public class SimpleDictionnary {
         this.word = word;
         this.translation = translation;
     }
+
+    @Override
+    public String toString() {
+        return "word " + word + " translation : " + translation;
+    }
 }
