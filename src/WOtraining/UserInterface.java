@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class UserInterface {
 
+    private WordSet wordSet;
     private Scanner scanner;
-    private ArrayList<String> words;
 
-    public UserInterface(Scanner scanner) {
+    public UserInterface(WordSet wordSet, Scanner scanner) {
+        this.wordSet = wordSet;
         this.scanner = scanner;
-        this.words = new ArrayList<String>();
     }
 
     public void start() {
