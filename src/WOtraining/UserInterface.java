@@ -27,6 +27,7 @@ public class UserInterface {
         }
 
         System.out.println("You gave the same word twice!");
+        System.out.println(this.wordSet.palindromes() + " of the words were palindromes.");
     }
 
 
