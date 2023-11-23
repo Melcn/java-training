@@ -64,7 +64,7 @@ public class PersonTest {
         System.out.println(d3 + " is earlier than " + d2 + ": " + d3.before(d2));
 
         System.out.println(d4 + " is earlier than " + d1 + ": " + d4.before(d1));
-        System.out.println(d1 + " is earlier than " + d4 + ": " + d1.before(d4));*/
+        System.out.println(d1 + " is earlier than " + d4 + ": " + d1.before(d4));
 
         SimpleDate date = new SimpleDate(24, 3, 2017);
         SimpleDate date2 = new SimpleDate(23, 7, 2017);
@@ -81,6 +81,20 @@ public class PersonTest {
         if (leo.equals(leoWithDifferentWeight)) {
             System.out.println("Is this quite correct?");
 
+        }
+        */
+        Room room = new Room();
+        System.out.println("Empty room? " + room.isEmpty());
+        room.add(new Person("Lea", 183));
+        room.add(new Person("Kenya", 182));
+        room.add(new Person("Auli", 186));
+        room.add(new Person("Nina", 172));
+        room.add(new Person("Terhi", 185));
+        System.out.println("Empty room? " + room.isEmpty());
+
+        System.out.println("");
+        for (Person person : room.getPeople()) {
+            System.out.println(person);
         }
     }
 }

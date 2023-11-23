@@ -11,12 +11,21 @@ public class Room {
     }
 
     public void add(Person person) {
-        //ajouter la personne passée en paramètre à la liste.
+        for (Person p : people
+        ) {
+            if (!p.equals(person)) {
+                people.add(person);
+            }
+        }
     }
 
     public boolean isEmpty() {
-        //indique si la pièce est vide ou non
-        return true;
+        if (!people.equals(null)) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     public ArrayList<Person> getPeople() {
