@@ -5,8 +5,9 @@ public class Gift {
     private String name;
     private int weight;
 
-    public Gift() {
-
+    public Gift(String name, int weight) {
+        this.name = name;
+        this.weight = weight;
     }
 
     public int getWeight() {
