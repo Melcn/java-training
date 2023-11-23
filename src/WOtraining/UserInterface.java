@@ -26,7 +26,10 @@ public class UserInterface {
     }
 
     public boolean alreadyEntered(String word) {
-        // do something here
+        if (word.equals("end")) {
+            return true;
+        }
+
 
         return false;
     }
