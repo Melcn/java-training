@@ -12,5 +12,22 @@ public class UserInterface {
 
     public void start() {
 
+        while (true) {
+            System.out.print("Enter a word: ");
+            String word = scanner.nextLine();
+
+            if (alreadyEntered(word)) {
+                break;
+            }
+
+        }
+
+        System.out.println("You gave the same word twice!");
+    }
+
+    public boolean alreadyEntered(String word) {
+        // do something here
+
+        return false;
     }
 }
