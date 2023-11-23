@@ -9,4 +9,12 @@ public class Package {
     public Package() {
 
     }
+
+    public void addGift(Gift gift) {
+        Gifts.add(gift);
+    }
+
+    public int totalWeight() {
+        return 0;
+    }
 }
