@@ -8,4 +8,17 @@ public class Gift {
     public Gift() {
 
     }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
