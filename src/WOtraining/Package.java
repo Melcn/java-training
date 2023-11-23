@@ -4,17 +4,22 @@ import java.util.ArrayList;
 
 public class Package {
 
-    private ArrayList<Gift> Gifts = new ArrayList<>();
+    private ArrayList<Gift> gifts = new ArrayList<>();
 
     public Package() {
 
     }
 
     public void addGift(Gift gift) {
-        Gifts.add(gift);
+        gifts.add(gift);
     }
 
     public int totalWeight() {
-        return 0;
+        int tw = 0;
+        for (Gift g : gifts
+        ) {
+            tw = +g.getWeight();
+        }
+        return tw;
     }
 }
