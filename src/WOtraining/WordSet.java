@@ -19,7 +19,18 @@ public class WordSet {
         return this.words.contains(word);
     }
 
-   
+    public int palindromes() {
+        int count = 0;
+
+        for (String word : this.words) {
+            if (isPalindrome(word)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
     public boolean isPalindrome(String word) {
         int end = word.length() - 1;
 
