@@ -19,21 +19,14 @@ public class UserInterface {
             System.out.print("Enter a word: ");
             String word = scanner.nextLine();
 
-            if (alreadyEntered(word)) {
+            if (this.wordSet.contains(word)) {
                 break;
             }
 
-            this.words.add(word);
-
-
+            this.wordSet.add(word);
         }
 
-        for (String word : this.words) {
-            System.out.println(word);
-        }
         System.out.println("You gave the same word twice!");
-
-
     }
 
     public boolean alreadyEntered(String word) {
