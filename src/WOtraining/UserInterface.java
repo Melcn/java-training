@@ -10,5 +10,7 @@ public class UserInterface {
         this.scanner = scanner;
     }
 
-    
+    public void start() {
+
+    }
 }
