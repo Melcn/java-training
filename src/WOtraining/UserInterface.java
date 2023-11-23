@@ -29,7 +29,5 @@ public class UserInterface {
         System.out.println("You gave the same word twice!");
     }
 
-    public boolean alreadyEntered(String word) {
-        return this.words.contains(word);
-    }
+
 }
