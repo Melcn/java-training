@@ -1,13 +1,16 @@
 package WOtraining;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserInterface {
 
     private Scanner scanner;
+    private ArrayList<String> words;
 
     public UserInterface(Scanner scanner) {
         this.scanner = scanner;
+        this.words = new ArrayList<String>();
     }
 
     public void start() {
@@ -20,17 +23,20 @@ public class UserInterface {
                 break;
             }
 
+            this.words.add(word);
+
+
         }
 
+        for (String word : this.words) {
+            System.out.println(word);
+        }
         System.out.println("You gave the same word twice!");
+
+
     }
 
     public boolean alreadyEntered(String word) {
-        if (word.equals("end")) {
-            return true;
-        }
-
-
-        return false;
+        return this.words.contains(word);
     }
 }
