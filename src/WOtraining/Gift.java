@@ -19,6 +19,6 @@ public class Gift {
 
     @Override
     public String toString() {
-        return super.toString();
+        return name + " : " + weight + " kg.";
     }
 }
