@@ -9,4 +9,16 @@ public class LiquidContainers {
         this.name = name;
         this.amount = amount;
     }
+
+    public int addAmount() {
+        return 0;
+    }
+
+    public void moveAmount() {
+
+    }
+
+    public void removeAmount() {
+
+    }
 }
