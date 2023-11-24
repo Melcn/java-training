@@ -4,7 +4,10 @@ package WOtraining;
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
-    
+
+    public static void main(String[] args) {
+
+    }
 
     @Test
     public void calculatorInitialValueZero() {
