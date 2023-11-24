@@ -6,6 +6,11 @@ public class Person {
     private int weight;
     private int height;
 
+    public Person(String name, int weight) {
+        this.name = name;
+        this.weight = weight;
+    }
+
     public Person(String name, SimpleDate date) {
         this.name = name;
         this.birthday = date;
