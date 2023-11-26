@@ -1,24 +1,16 @@
 package WOtraining.Part7;
 
+import java.util.Scanner;
+
 public class LiquidContainers {
 
-    private String name;
-    private int amount;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Container firstContainer = new Container();
+        Container secondContainer = new Container();
 
-    public LiquidContainers() {
-        this.name = name;
-        this.amount = amount;
-    }
-
-    public int addAmount() {
-        return 0;
-    }
-
-    public void moveAmount() {
-
-    }
-
-    public void removeAmount() {
+        LiquidUserInterface userInterface = new LiquidUserInterface(firstContainer, secondContainer, scanner);
+        userInterface.start();
 
     }
 }
