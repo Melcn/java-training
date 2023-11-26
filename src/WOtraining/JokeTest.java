@@ -9,7 +9,7 @@ public class JokeTest {
 
         System.out.println("Drawing jokes:");
         for (int i = 0; i < 5; i++) {
-            System.out.println(manager.drawJokes());
+            //System.out.println(manager.drawJokes());
         }
 
         System.out.println("");
