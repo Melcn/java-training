@@ -1,4 +1,4 @@
-package WOtraining;
+package WOtraining.Part7;
 
 public class LiquidContainers {
 

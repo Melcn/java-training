@@ -1,4 +1,6 @@
-package WOtraining;
+package WOtraining.Part6;
+
+import WOtraining.WordSet;
 
 import java.util.ArrayList;
 import java.util.Scanner;

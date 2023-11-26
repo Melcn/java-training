@@ -1,4 +1,6 @@
-package WOtraining;
+package WOtraining.Part5;
+
+import WOtraining.Person;
 
 public class HealthStation {
     private int count;

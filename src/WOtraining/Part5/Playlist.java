@@ -1,4 +1,4 @@
-package WOtraining;
+package WOtraining.Part5;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class Playlist {
     }
 
     public void printSongs() {
-        for (String song: this.songs) {
+        for (String song : this.songs) {
             System.out.println(song);
         }
     }

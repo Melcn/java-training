@@ -1,4 +1,4 @@
-package WOtraining;
+package WOtraining.Part6;
 
 public class JokeManager {
 
@@ -18,5 +18,5 @@ public class JokeManager {
 
     }
 
-    
+
 }

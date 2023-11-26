@@ -1,4 +1,4 @@
-package WOtraining;
+package WOtraining.Part6;
 
 
 public class TodoList {
@@ -9,7 +9,7 @@ public class TodoList {
     }
 
     public void add(String task) {
-        
+
     }
 
     public void print() {

@@ -1,4 +1,4 @@
-package WOtraining;
+package WOtraining.Part6;
 
 public class TodoListTest {
     public static void main(String[] args) {

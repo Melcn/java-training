@@ -1,4 +1,4 @@
-package WOtraining;
+package WOtraining.Part5;
 
 public class Fitbyte {
 
