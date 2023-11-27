@@ -2,7 +2,7 @@ package MOOCFI2.Part9.Polymorphism.Herds;
 
 public class Main {
     public static void main(String[] args) {
-        
+
         Herd herd = new Herd();
         herd.addToHerd(new Organism(57, 66));
         herd.addToHerd(new Organism(73, 56));
