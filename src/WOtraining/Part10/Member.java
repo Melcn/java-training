@@ -9,8 +9,27 @@ public class Member implements Comparable<Member> {
         this.height = height;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public int getHeight() {
+        return this.height;
+    }
+
     @Override
-    public int compareTo(Member o) {
-        return 0;
+    public String toString() {
+        return this.getName() + " (" + this.getHeight() + ")";
+    }
+
+    @Override
+    public int compareTo(Member member) {
+        if (this.height == member.getHeight()) {
+            return 0;
+        } else if (this.height > member.getHeight()) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 }
