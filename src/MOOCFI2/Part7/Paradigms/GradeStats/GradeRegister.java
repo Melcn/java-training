@@ -61,5 +61,24 @@ public class GradeRegister {
     public double percentageAboveGrade(int grade) {
         return 100.0 * this.getSizeAboveGrade(grade) / this.getSize();
     }
+    public int[] convertGradeScaleToPointScale() {
+        int[] register = {0, 0, 0, 0, 0, 0};
 
+        for (int grade : this.grades) {
+            if (grade < 50) {
+                register[0]++;
+            } else if (grade < 60) {
+                register[1]++;
+            } else if (grade < 70) {
+                register[2]++;
+            } else if (grade < 80) {
+                register[3]++;
+            } else if (grade < 90) {
+                register[4]++;
+            } else {
+                register[5]++;
+            }
+        }
+        return register;
+    }
 }
