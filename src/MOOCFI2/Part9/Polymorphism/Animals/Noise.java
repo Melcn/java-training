@@ -1,4 +1,5 @@
 package MOOCFI2.Part9.Polymorphism.Animals;
 
-public class Noise {
+public interface Noise {
+    void makeNoise();
 }
