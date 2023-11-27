@@ -2,7 +2,7 @@ package MOOCFI2.Part9.Inheritance.ABC;
 
 public class Main {
     public static void main(String[] args) {
-      
+
         A a = new A();
         B b = new B();
         C c = new C();
