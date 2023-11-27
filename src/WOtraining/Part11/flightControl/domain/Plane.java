@@ -1,4 +1,4 @@
-package WOtraining.Part11;
+package WOtraining.Part11.flightControl.domain;
 
 public class Plane {
     private String id;

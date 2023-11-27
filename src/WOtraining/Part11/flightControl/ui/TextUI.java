@@ -1,4 +1,7 @@
-package WOtraining.Part11;
+package WOtraining.Part11.flightControl.ui;
+
+import WOtraining.Part11.flightControl.logic.FlightControl;
+import WOtraining.Part11.flightControl.domain.Plane;
 
 import java.util.Scanner;
 

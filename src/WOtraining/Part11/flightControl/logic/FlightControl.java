@@ -1,4 +1,8 @@
-package WOtraining.Part11;
+package WOtraining.Part11.flightControl.logic;
+
+import WOtraining.Part11.flightControl.domain.Airport;
+import WOtraining.Part11.flightControl.domain.Flight;
+import WOtraining.Part11.flightControl.domain.Plane;
 
 import java.util.HashMap;
 
