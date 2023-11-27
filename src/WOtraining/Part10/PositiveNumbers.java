@@ -21,5 +21,6 @@ public class PositiveNumbers {
                 .collect(Collectors.toCollection(ArrayList::new));
 
         System.out.println("list: " + list);
+        System.out.println("values: " + values);
     }
 }
