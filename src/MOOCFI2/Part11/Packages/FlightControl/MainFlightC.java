@@ -1,7 +1,7 @@
-package MOOCFI2.Part11.Packages.flightControl;
+package MOOCFI2.Part11.Packages.FlightControl;
 
-import MOOCFI2.Part11.Packages.flightControl.logic.FlightControl;
-import MOOCFI2.Part11.Packages.flightControl.ui.TextUI;
+import MOOCFI2.Part11.Packages.FlightControl.logic.FlightControl;
+import MOOCFI2.Part11.Packages.FlightControl.ui.TextUI;
 
 import java.util.Scanner;
 

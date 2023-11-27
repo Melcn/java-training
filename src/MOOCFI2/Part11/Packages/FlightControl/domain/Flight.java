@@ -1,4 +1,4 @@
-package MOOCFI2.Part11.Packages.flightControl.domain;
+package MOOCFI2.Part11.Packages.FlightControl.domain;
 
 public class Flight {
     private Plane plane;

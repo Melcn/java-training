@@ -1,8 +1,8 @@
-package MOOCFI2.Part11.Packages.flightControl.logic;
+package MOOCFI2.Part11.Packages.FlightControl.logic;
 
-import MOOCFI2.Part11.Packages.flightControl.domain.Airport;
-import MOOCFI2.Part11.Packages.flightControl.domain.Flight;
-import MOOCFI2.Part11.Packages.flightControl.domain.Plane;
+import MOOCFI2.Part11.Packages.FlightControl.domain.Airport;
+import MOOCFI2.Part11.Packages.FlightControl.domain.Flight;
+import MOOCFI2.Part11.Packages.FlightControl.domain.Plane;
 
 import java.util.HashMap;
 
