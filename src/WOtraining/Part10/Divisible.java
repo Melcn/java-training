@@ -11,13 +11,11 @@ public class Divisible {
         numbers.add(-5);
         numbers.add(7);
 
-        ArrayList<Integer> divisible = divisible(numbers);
+        ArrayList<Integer> divisible = (ArrayList<Integer>) numbers.stream();
 
         divisible.stream()
                 .forEach(num -> System.out.println(num));
     }
 
-    private static ArrayList<Integer> divisible(ArrayList<Integer> numbers) {
-        return numbers;
-    }
+
 }
