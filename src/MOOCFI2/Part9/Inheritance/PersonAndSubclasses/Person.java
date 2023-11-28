@@ -10,8 +10,16 @@ public class Person {
         this.adress = adress;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
     @Override
     public String toString() {
-        return super.toString();
+        return this.getName() + " " + this.getAdress();
     }
 }
