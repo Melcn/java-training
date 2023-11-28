@@ -1,5 +1,5 @@
 package MOOCFI2.Part9.Polymorphism.Animals;
-
+/*
 public class Dog implements Noise{
     public Dog() {
         super("Dog");
@@ -18,3 +18,4 @@ public class Dog implements Noise{
         this.bark();
     }
 }
+*/
