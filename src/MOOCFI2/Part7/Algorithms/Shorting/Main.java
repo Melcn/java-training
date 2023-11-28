@@ -41,4 +41,9 @@ public class Main {
         }
 
     }
+
+    public static void sort(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+        }
+    }
 }

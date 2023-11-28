@@ -17,6 +17,9 @@ public class Test {
         System.out.println(Arrays.toString(numbrs));
         Main.swap(numbrs, 0, 3);
         System.out.println(Arrays.toString(numbrs));
+
+        int[] nmbers = {8, 3, 7, 9, 1, 2, 4};
+        Main.sort(nmbers);
     }
 
 }
