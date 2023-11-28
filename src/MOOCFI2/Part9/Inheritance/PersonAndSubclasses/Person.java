@@ -9,4 +9,9 @@ public class Person {
         this.name = name;
         this.adress = adress;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
