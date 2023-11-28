@@ -1,7 +1,7 @@
 package MOOCFI2.Part9.Interfaces.Map;
 
 import java.util.HashMap;
-
+/*
 public class Map {
 
     public static void main(String[] args) {
@@ -18,4 +18,4 @@ public class Map {
     public static int returnSize(Map<String, String> map) {
         return map.size();
     }
-}
+}*/

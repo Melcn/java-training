@@ -1,5 +1,5 @@
 package MOOCFI2.Part9.Polymorphism.Animals;
-
+/*
 public class Cat implements Noise {
     public Cat() {
         super("Cat");
@@ -17,4 +17,4 @@ public class Cat implements Noise {
     public void makeNoise() {
         this.purr();
     }
-}
+}*/

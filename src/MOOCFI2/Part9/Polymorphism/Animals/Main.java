@@ -1,5 +1,5 @@
 package MOOCFI2.Part9.Polymorphism.Animals;
-
+/*
 public class Main {
     public static void main(String[] args) {
 
@@ -20,3 +20,4 @@ public class Main {
     }
 
 }
+*/
