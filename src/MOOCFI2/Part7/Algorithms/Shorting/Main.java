@@ -21,4 +21,24 @@ public class Main {
         }
         return nb;
     }
+
+    public static int indexOfSmallestFrom(int[] table, int startIndex) {
+        int nb = table[startIndex];
+        for (int i = 0; i < table.length; i++) {
+            if (table[i] < nb) {
+                nb = i;
+            }
+        }
+        return nb;
+    }
+
+    public static void swap(int[] array, int index1, int index2) {
+        int tmp = 0;
+        for (int i = 0; i < array.length; i++) {
+            tmp = array[index1];
+            array[index1] = array[index2];
+            array[index2] = tmp;
+        }
+
+    }
 }
