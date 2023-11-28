@@ -12,5 +12,10 @@ public class Main {
         System.out.println("Study credits " + ollie.credits());
         ollie.study();
         System.out.println("Study credits " + ollie.credits());
+
+        Student allie = new Student("Allie", "6381 Hollywood Blvd. Los Angeles 90028");
+        System.out.println(allie);
+        allie.study();
+        System.out.println(allie);
     }
 }
