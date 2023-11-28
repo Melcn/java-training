@@ -17,5 +17,19 @@ public class Main {
         System.out.println(allie);
         allie.study();
         System.out.println(allie);
+
+        Teacher adaa = new Teacher("Adaa Lovelace", "24 Maddox St. London W1S 2QN", 1200);
+        Teacher eesko = new Teacher("Eesko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 5400);
+        System.out.println(adaa);
+        System.out.println(eesko);
+
+        Student olllie = new Student("Olllie", "6381 Hollywood Blvd. Los Angeles 90028");
+
+        int i = 0;
+        while (i < 25) {
+            olllie.study();
+            i = i + 1;
+        }
+        System.out.println(olllie);
     }
 }
