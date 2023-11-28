@@ -1,5 +1,7 @@
 package MOOCFI2.Part9.Inheritance.PersonAndSubclasses;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Person ada = new Person("Ada Lovelace", "24 Maddox St. London W1S 2QN");
@@ -38,7 +40,7 @@ public class Main {
         System.out.println("  ");
         System.out.println(" ******************************************* ");
         System.out.println("  ");
-        
+
         Student olllie = new Student("Olllie", "6381 Hollywood Blvd. Los Angeles 90028");
 
         int i = 0;
@@ -47,5 +49,22 @@ public class Main {
             i = i + 1;
         }
         System.out.println(olllie);
+
+        System.out.println("  ");
+        System.out.println(" ******************************************* ");
+        System.out.println("  ");
+
+        ArrayList<Person> persons = new ArrayList<Person>();
+        persons.add(new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200));
+        persons.add(new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028"));
+
+        printPersons(persons);
+    }
+
+    public static void printPersons(ArrayList<Person> persons) {
+        for (Person p : persons
+        ) {
+            System.out.println(p);
+        }
     }
 }

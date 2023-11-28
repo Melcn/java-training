@@ -1,5 +1,7 @@
 package MOOCFI2.Part9.Inheritance.PersonAndSubclasses;
 
+import java.util.ArrayList;
+
 public class Person {
 
     private String name;
@@ -9,6 +11,7 @@ public class Person {
         this.name = name;
         this.adress = adress;
     }
+
 
     public String getName() {
         return name;
