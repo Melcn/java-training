@@ -4,6 +4,7 @@ public class Test {
     public static void main(String[] args) {
         int[] numbers = {6, 5, 8, 7, 11};
         System.out.println("Smallest: " + Main.smallest(numbers));
+        System.out.println("Index of the smallest number: " + Main.indexOfSmallest(numbers));
     }
 
 }

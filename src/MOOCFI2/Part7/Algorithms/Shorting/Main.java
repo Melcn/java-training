@@ -12,5 +12,13 @@ public class Main {
         return nb;
     }
 
-
+    public static int indexOfSmallest(int[] array) {
+        int nb = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < nb) {
+                nb = i;
+            }
+        }
+        return nb;
+    }
 }
