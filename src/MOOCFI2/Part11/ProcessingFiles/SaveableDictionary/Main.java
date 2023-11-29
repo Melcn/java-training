@@ -3,7 +3,7 @@ package MOOCFI2.Part11.ProcessingFiles.SaveableDictionary;
 public class Main {
 
     public static void main(String[] args) {
-        
+
         SaveableDictionary dictionary = new SaveableDictionary("words.txt");
         boolean wasSuccessful = dictionary.load();
 

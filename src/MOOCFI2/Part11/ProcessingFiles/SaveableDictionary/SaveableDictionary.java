@@ -54,4 +54,20 @@ public class SaveableDictionary {
         }
 
     }
+
+    public void add(String words, String translation) {
+        this.dictionary.putIfAbsent(words, translation);
+    }
+
+    public String translate(String word) {
+        for (String item : this.dictionary.keySet()) {
+            if (this.dictionary.get(item).equals(word)) {
+                return item;
+            } else if (this.dictionary.get(word) != null) {
+                return this.dictionary.get(word);
+            }
+        }
+
+        return null;
+    }
 }
