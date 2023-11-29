@@ -70,4 +70,17 @@ public class SaveableDictionary {
 
         return null;
     }
+
+    public void delete(String word) {
+        String itemToRemove = "";
+        for (String item : this.dictionary.keySet()) {
+            if (this.dictionary.get(item).equals(word)) {
+                itemToRemove = item;
+            } else if (this.dictionary.get(word) != null) {
+                itemToRemove = word;
+            }
+        }
+
+        this.dictionary.remove(itemToRemove);
+    }
 }
