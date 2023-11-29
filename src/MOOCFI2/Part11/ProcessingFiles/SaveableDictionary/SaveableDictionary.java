@@ -1,6 +1,7 @@
 package MOOCFI2.Part11.ProcessingFiles.SaveableDictionary;
 
 import java.io.File;
+import java.io.PrintWriter;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -33,5 +34,24 @@ public class SaveableDictionary {
             System.out.println("File load error: " + e.getMessage());
             return false;
         }
+    }
+
+    public boolean save() {
+        try {
+            PrintWriter pw = new PrintWriter(this.file.getName());
+            for (String s : this.dictionary.keySet()) {
+                String word = s;
+                String translation = this.dictionary.get(s);
+                pw.println(word + ":" + translation);
+            }
+
+            pw.close();
+            return true;
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+
     }
 }
