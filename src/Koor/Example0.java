@@ -25,6 +25,7 @@ public class Example0 extends JFrame {
 
         this.setSize(400, 200);
         this.setLocationRelativeTo(null);
+        this.setVisible(true);
     }
 
     public static void main(String[] args) throws Exception {
