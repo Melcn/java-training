@@ -1,11 +1,12 @@
 package Koor;
 
 import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
-public class Example0 extends JFrame {
+public class Example0 extends JFrame implements ActionListener {
 
     private static final long serialVersionUID = -4939544011287453046L;
 
@@ -23,6 +24,7 @@ public class Example0 extends JFrame {
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
 
+        btnClickMe.addActionListener();
         this.setSize(400, 200);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
