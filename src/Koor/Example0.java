@@ -18,7 +18,6 @@ public class Example0 extends JFrame {
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         JPanel contentPane = (JPanel) this.getContentPane();
-        // Un FlowLayout permet de positionner les boutons les uns à la suite des autres.
         contentPane.setLayout(new FlowLayout());
         contentPane.add(btnClickMe);
         contentPane.add(btnPushMe);
