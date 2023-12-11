@@ -40,6 +40,8 @@ public class Example2 extends JFrame {
 
         public void actionPerformed(ActionEvent e) {
             System.out.println(demo);
+            System.out.println(this.demo);
+            System.out.println(Example2.this.demo);//recupere la valeur de la class initial
         }
     }
 }
