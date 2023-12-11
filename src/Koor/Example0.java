@@ -2,9 +2,8 @@ package Koor;
 
 import java.awt.FlowLayout;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 public class Example0 extends JFrame {
 
@@ -13,4 +12,13 @@ public class Example0 extends JFrame {
     private JButton btnClickMe = new JButton("Click me!");
     private JButton btnPushMe = new JButton("Push me!");
     private JButton btnActivateMe = new JButton("Activate me!");
+
+    public static void main(String[] args) throws Exception {
+
+        UIManager.setLookAndFeel(new NimbusLookAndFeel());
+
+
+        Demo demo = new Demo();
+        demo.setVisible(true);
+    }
 }
