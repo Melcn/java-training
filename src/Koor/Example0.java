@@ -26,6 +26,8 @@ public class Example0 extends JFrame implements ActionListener {
         contentPane.add(btnActivateMe);
 
         btnClickMe.addActionListener(this);
+        btnPushMe.addActionListener(this);
+        btnActivateMe.addActionListener(this);
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
@@ -42,6 +44,10 @@ public class Example0 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("Button  click me! clicked");
+        if (e.getSource() == btnClickMe) {
+            System.out.println("Bouton a clické");
+        } else if (e.getSource() == btnPushMe) {
+            this.setTitle(("click"));
+        }
     }
 }
