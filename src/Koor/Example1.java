@@ -22,6 +22,7 @@ public class Example1 extends JFrame {
         contentPane.add(btnActivateMe);
 
         btnClickMe.addActionListener(new BtnClickMeListener());
+        btnPushMe.addActionListener(new BtnPushMeListener());
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
