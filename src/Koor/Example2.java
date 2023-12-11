@@ -23,6 +23,8 @@ public class Example2 extends JFrame {
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
 
+        btnClickMe.addActionListener(new BtnClickMeListenerInner());
+
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
@@ -37,7 +39,7 @@ public class Example2 extends JFrame {
         private int demo = 2000;
 
         public void actionPerformed(ActionEvent e) {
-
+            System.out.println(demo);
         }
     }
 }
