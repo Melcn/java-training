@@ -1,6 +1,7 @@
 package Koor;
 
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
@@ -24,8 +25,8 @@ public class Example0 extends JFrame implements ActionListener {
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
 
-        btnClickMe.addActionListener();
-        this.setSize(400, 200);
+        btnClickMe.addActionListener(this);
+        this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
@@ -37,5 +38,10 @@ public class Example0 extends JFrame implements ActionListener {
 
         Example0 demo = new Example0();
         demo.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Button  click me! clicked");
     }
 }
