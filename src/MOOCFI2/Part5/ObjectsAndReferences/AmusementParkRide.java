@@ -1,7 +1,5 @@
 package MOOCFI2.Part5.ObjectsAndReferences;
 
-import MOOCFI2.Person;
-
 import java.util.ArrayList;
 
 public class AmusementParkRide {
