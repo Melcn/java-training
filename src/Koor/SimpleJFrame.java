@@ -5,8 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
-public class Example3 extends JFrame implements ActionListener {
+public class SimpleJFrame extends JFrame implements ActionListener {
 
     private static final long serialVersionUID = -4939544011287453046L;
 
@@ -14,7 +15,7 @@ public class Example3 extends JFrame implements ActionListener {
     private JButton btnPushMe = new JButton("Push me!");
     private JButton btnActivateMe = new JButton("Activate me!");
 
-    public Example3() {
+    public SimpleJFrame() {
         super("Implémentation d'interface");
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
@@ -24,21 +25,21 @@ public class Example3 extends JFrame implements ActionListener {
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
 
-        btnClickMe.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                
-            }
-        });
-
+        btnClickMe.addActionListener(this);
+        btnPushMe.addActionListener(this);
+        btnActivateMe.addActionListener(this);
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        new Example3();
+        UIManager.setLookAndFeel(new NimbusLookAndFeel());
+
+
+        SimpleJFrame demo = new SimpleJFrame();
+        demo.setVisible(true);
     }
 
     @Override

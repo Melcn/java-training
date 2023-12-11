@@ -1,13 +1,12 @@
 package Koor;
 
-import java.awt.FlowLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
-public class Example0 extends JFrame implements ActionListener {
+public class AnonymClass extends JFrame implements ActionListener {
 
     private static final long serialVersionUID = -4939544011287453046L;
 
@@ -15,7 +14,7 @@ public class Example0 extends JFrame implements ActionListener {
     private JButton btnPushMe = new JButton("Push me!");
     private JButton btnActivateMe = new JButton("Activate me!");
 
-    public Example0() {
+    public AnonymClass() {
         super("Implémentation d'interface");
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
@@ -25,21 +24,21 @@ public class Example0 extends JFrame implements ActionListener {
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
 
-        btnClickMe.addActionListener(this);
-        btnPushMe.addActionListener(this);
-        btnActivateMe.addActionListener(this);
+        btnClickMe.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                btnActivateMe.setForeground(Color.GREEN);
+            }
+        });
+
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        UIManager.setLookAndFeel(new NimbusLookAndFeel());
-
-
-        Example0 demo = new Example0();
-        demo.setVisible(true);
+        new AnonymClass();
     }
 
     @Override

@@ -9,7 +9,7 @@ public class BtnPushMeListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         JButton btn = (JButton) e.getSource();
-        Example1 frame = (Example1) btn.getTopLevelAncestor();
+        TestJFrame frame = (TestJFrame) btn.getTopLevelAncestor();
         frame.setTitle("Click");
 
         frame.btnActivateMe.setText("Hello");
