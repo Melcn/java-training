@@ -1,4 +1,4 @@
-package Koor;
+package Koor.Grafik;
 
 import javax.swing.*;
 import java.awt.*;

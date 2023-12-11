@@ -1,4 +1,4 @@
-package Koor;
+package Koor.Grafik;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
