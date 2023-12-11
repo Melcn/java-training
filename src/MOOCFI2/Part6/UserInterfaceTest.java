@@ -1,7 +1,5 @@
 package MOOCFI2.Part6;
 
-import MOOCFI2.WordSet;
-
 import java.util.Scanner;
 
 public class UserInterfaceTest {
