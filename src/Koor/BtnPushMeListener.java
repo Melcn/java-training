@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class BtnPushMeListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
-        JButton btn = (JButton) event.getSource();
+        JButton btn = (JButton) e.getSource();
         Example1 frame = (Example1) btn.getTopLevelAncestor();
         frame.setTitle("Click");
 
