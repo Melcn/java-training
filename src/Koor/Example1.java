@@ -20,6 +20,11 @@ public class Example1 extends JFrame {
         contentPane.add(btnClickMe);
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
+
+        btnClickMe.addActionListener(new BtnClickMeListener());
+        this.setSize(600, 400);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
     }
 
     public static void main(String[] args) throws Exception {
