@@ -1,6 +1,7 @@
 package MOOCFI2.Part10.HandlingCollectionsAsStreams.Divisible;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class Divisible {
     public static void main(String[] args) {
@@ -17,5 +18,7 @@ public class Divisible {
                 .forEach(num -> System.out.println(num));
     }
 
-
+    public static ArrayList<Integer> divisible(ArrayList<Integer> numbers) {
+        return numbers.stream().filter(s -> s%2==0 || s%3==0 || s%5==0).collect(Collectors.toCollection(ArrayList::new));
+    }
 }
