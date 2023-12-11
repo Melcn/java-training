@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 public class Example3 extends JFrame implements ActionListener {
 
@@ -25,7 +24,12 @@ public class Example3 extends JFrame implements ActionListener {
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
 
-        btnClickMe.addActionListener(new ActionListener());
+        btnClickMe.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+            }
+        });
 
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
